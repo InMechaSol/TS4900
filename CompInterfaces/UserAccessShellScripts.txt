@@ -1,0 +1,1 @@
+User Access Shell Scripts have been made linux generic and therefore are located in the ccACU application library
