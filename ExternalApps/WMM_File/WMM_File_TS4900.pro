@@ -8,11 +8,12 @@ CONFIG -= qt
 #QMAKE_EXT_CPP = .cpp
 #QMAKE_EXT_H = .h .hpp .c
 
+TARGET=WMM_File.exe
+target.path = /usr/bin/acu # path on device
+INSTALLS += target
 
 ccOSDIR = $$absolute_path($${PWD}/../../../ccOS/)
 ccOSMainsDIR = $${ccOSDIR}/ccLibs/acs/NOAA_WMM
-
-
 
 INCLUDEPATH += $$ccOSMainsDIR
 

@@ -8,7 +8,9 @@ QMAKE_LFLAGS += -lrt -lpthread
 QMAKE_EXT_CPP = .cpp
 QMAKE_EXT_H = .h .hpp .c
 
-
+TARGET=ACU_UI.exe
+target.path = /usr/bin/acu # path on device
+INSTALLS += target
 
 ccNOosDIR = $$absolute_path($${PWD}/../../ccNOos/)
 ccOSDIR = $$absolute_path($${PWD}/../../ccOS/)

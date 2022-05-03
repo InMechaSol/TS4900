@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.0, 2022-05-03T09:06:32. -->
+<!-- Written by QtCreator 4.11.0, 2022-05-03T12:14:01. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -67,7 +67,7 @@
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{b7c62f53-c663-42ab-8417-4b02988dbf4e}</value>
    <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
-   <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">1</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/usr/tmp/build-ccACU-TSIMX6-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
@@ -320,8 +320,8 @@
     <value type="int" key="PE.EnvironmentAspect.Base">1</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">ConsoleUI_TS4900 (on TSIMX6)2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/usr/Repos/RECON_ACU/TS4900ACU/application/TS4900/ConsoleApp/ConsoleUI_TS4900.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/usr/Repos/RECON_ACU/TS4900ACU/application/TS4900/ConsoleApp/ConsoleUI_TS4900.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/usr/Repos/TS4900ACU/application/TS4900/ConsoleApp/ConsoleUI_TS4900.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/usr/Repos/TS4900ACU/application/TS4900/ConsoleApp/ConsoleUI_TS4900.pro</value>
     <value type="int" key="RemoteLinux.EnvironmentAspect.Version">1</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
     <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>
@@ -399,8 +399,8 @@
     <value type="int" key="PE.EnvironmentAspect.Base">1</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">ccACU_TS4900 (on TSIMX6)2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/usr/Repos/RECON_ACU/TS4900ACU/application/TS4900/ControllerApp/ccACU_TS4900.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/usr/Repos/RECON_ACU/TS4900ACU/application/TS4900/ControllerApp/ccACU_TS4900.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/usr/Repos/TS4900ACU/application/TS4900/ControllerApp/ccACU_TS4900.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/usr/Repos/TS4900ACU/application/TS4900/ControllerApp/ccACU_TS4900.pro</value>
     <value type="int" key="RemoteLinux.EnvironmentAspect.Version">1</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
     <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>
@@ -411,7 +411,8 @@
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">false</value>
+    <value type="bool" key="RunConfiguration.UseTerminal">true</value>
     <value type="bool" key="RunConfiguration.UseX11Forwarding">false</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
     <value type="QString" key="RunConfiguration.WorkingDirectory.default"></value>
@@ -478,8 +479,8 @@
     <value type="int" key="PE.EnvironmentAspect.Base">1</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">WMM_File_TS4900 (on TSIMX6)2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/usr/Repos/RECON_ACU/TS4900ACU/application/TS4900/ExternalApps/WMM_File/WMM_File_TS4900.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/usr/Repos/RECON_ACU/TS4900ACU/application/TS4900/ExternalApps/WMM_File/WMM_File_TS4900.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/usr/Repos/TS4900ACU/application/TS4900/ExternalApps/WMM_File/WMM_File_TS4900.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/usr/Repos/TS4900ACU/application/TS4900/ExternalApps/WMM_File/WMM_File_TS4900.pro</value>
     <value type="int" key="RemoteLinux.EnvironmentAspect.Version">1</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
     <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>

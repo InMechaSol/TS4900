@@ -8,6 +8,9 @@ QMAKE_LFLAGS += -lrt -lpthread
 QMAKE_EXT_CPP = .cpp
 QMAKE_EXT_H = .h .hpp .c
 
+TARGET=ACU.exe
+target.path = /usr/bin/acu # path on device
+INSTALLS += target
 
 ccACUappDIR = $$absolute_path($${PWD}/../../ccACU/)
 ccNOosDIR = $$absolute_path($${PWD}/../../ccNOos/)
