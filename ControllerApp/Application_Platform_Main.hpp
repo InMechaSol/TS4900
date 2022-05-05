@@ -94,8 +94,8 @@ public:
     ManagedSwitchClass Switch_exeThread;
 
     // APT Devices
-    struct portParametersStruct GPSPortParams = buildportParametersStruct("\\\\.\\COM32", 9600);
-    struct portParametersStruct eCompPortParams = buildportParametersStruct("\\\\.\\COM31", 19200);
+    struct portParametersStruct GPSPortParams = buildportParametersStruct("/dev/ttyACM0", 9600);
+    struct portParametersStruct eCompPortParams = buildportParametersStruct("/dev/ttyUSB0", 19200);
     nbserial_class GPS_NBSerial;
     nbserial_class eComp_NBSerial;
 
