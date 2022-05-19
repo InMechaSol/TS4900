@@ -41,6 +41,10 @@ Notes:
 #include "tcp_comms.h"
 #include "serial_comms.h"
 
+
+// on the ts4900 platform, this function is not called.
+// instead the console interface is served over TCP to
+// a console front end
 std::thread stdInThread;
 UI_8 stdInThreadRunning = ui8FALSE;
 void readStdIn(char* inStringPtr)
@@ -55,7 +59,9 @@ void readStdIn(char* inStringPtr)
     } while (true);
 }
 
-
+//////////////////////////////////////////////////////////
+/// \brief The ccACU_ApplicationClass class
+///
 class ccACU_ApplicationClass : public ccOSApplicationClass
 {
 public:
@@ -98,6 +104,15 @@ public:
     struct portParametersStruct eCompPortParams = buildportParametersStruct("/dev/ttyUSB0", 19200);
     nbserial_class GPS_NBSerial;
     nbserial_class eComp_NBSerial;
+    const char* wmmCmd = "/usr/bin/acu/WMM_File.exe";
+    const char* wmmArg0 = "WMM_File.exe";
+    const char* wmmArg1 = "f";
+    const char* wmmArg2 = "/usr/bin/acu/terminal_coords.txt";
+    const char* wmmArg3 = "/usr/bin/acu/terminal_output.txt";
+    const char* wmmArg4 = NULL;
+    const char* wmmArgs[5] = {wmmArg0, wmmArg1, wmmArg2, wmmArg3, wmmArg4};
+    struct ExtProcStruct wmmExtProcStruct = createExtProcStruct(wmmCmd,wmmArgs);
+
 
     // TPM Devices
     struct adaFruitFT232hstruct PowerMeterADC_dev = createFT232Struct();
@@ -141,7 +156,7 @@ public:
         CGIServer_exeThread(&CGIServer_data, &ccACU_compMod),
 
         // link the device compute modules and the data objects on which they operate
-        APT_WMM_exeThread(&((SatComACSStruct*)ccACU_compMod.getModuleDataPtr())->APT, &((SatComACSStruct*)ccACU_compMod.getModuleDataPtr())->WMM, &GPS_NBSerial, &eComp_NBSerial),
+        APT_WMM_exeThread(&((SatComACSStruct*)ccACU_compMod.getModuleDataPtr())->APT, &GPS_NBSerial, &eComp_NBSerial, &wmmExtProcStruct),
         TPM_exeThread(&((SatComACSStruct*)ccACU_compMod.getModuleDataPtr())->TPM, &PowerMeter_PLL, &PowerMeter_ADC),
         TxRx_exeThread(&((SatComACSStruct*)ccACU_compMod.getModuleDataPtr())->TxRx, &TxRxSPI),
 
@@ -196,7 +211,7 @@ public:
         // Config and Log API device linking
         StdLogStruct.devptr = &StdIODevice;
         StdConfStruct.devptr = &StdIODevice;
-        stdInThread = std::thread(readStdIn, &StdConfStruct.devptr->inbuff.charbuff[0]);
+        //stdInThread = std::thread(readStdIn, &StdConfStruct.devptr->inbuff.charbuff[0]);
 
         theExecutionSystemPtr->exeThreadModuleList.emplace_back(&UIServer_exeThread);
         theExecutionSystemPtr->exeThreadModuleList.emplace_back(&SNMPServer_exeThread);
@@ -223,8 +238,8 @@ public:
     void linkAPIioDevices()
     {
         // APT Device setup
-        openComPort(&GPSPortParams);
-        openComPort(&eCompPortParams);
+        //openComPort(&GPSPortParams);
+        //openComPort(&eCompPortParams);
         // links between devices and gps/ecompass structure
         ((SatComACSStruct*)ccACU_compMod.getModuleDataPtr())->APT.GPS.devptr = &GPSPortParams.serialdev;
         ((SatComACSStruct*)ccACU_compMod.getModuleDataPtr())->APT.eCompass.devptr = &eCompPortParams.serialdev;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.0, 2022-05-02T14:49:11. -->
+<!-- Written by QtCreator 4.11.0, 2022-05-19T12:08:21. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -336,9 +336,9 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">1</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">ccACU_TS4900 (on TSIMX6)</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/usr/Repos/ccACU_Tests/TS4900/ControllerApp/ccACU_TS4900.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/usr/Repos/ccACU_Tests/TS4900/ControllerApp/ccACU_TS4900.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">ccACU_TS4900 (on TSIMX6)2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/usr/Repos/TS4900ACU/application/TS4900/ControllerApp/ccACU_TS4900.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/usr/Repos/TS4900ACU/application/TS4900/ControllerApp/ccACU_TS4900.pro</value>
     <value type="int" key="RemoteLinux.EnvironmentAspect.Version">1</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
     <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>
@@ -350,6 +350,7 @@
     <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseTerminal">true</value>
     <value type="bool" key="RunConfiguration.UseX11Forwarding">false</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
     <value type="QString" key="RunConfiguration.WorkingDirectory.default"></value>
